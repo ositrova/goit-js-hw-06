@@ -13,3 +13,28 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+const ingredientsEl = document.querySelector('#ingredients');
+
+const createItem = ingredients.map((el) => {
+  const list = document.createElement("li")
+  list.classList.add("item")
+  list.textContent = el
+
+  return list
+})
+
+ingredientsEl.append(...createItem)
+console.log(ingredientsEl)
+
+// const ingredientsElement = document.querySelector("#ingredients");
+
+// const createItemEl = ingredients.map((el) => {
+//   const ingredientsItemsEl = document.createElement("li");
+//   ingredientsItemsEl.classList.add("item");
+//   ingredientsItemsEl.textContent = el;
+
+//   return ingredientsItemsEl;
+// });
+
+// ingredientsElement.append(...createItemEl);
+// console.log(ingredientsElement);
