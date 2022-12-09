@@ -28,11 +28,11 @@ const images = [
 
 const imgEl = document.querySelector(".gallery")
 
-const createIgm = ({ url, alt } = {}) =>  {
-  return `<li class="js-item"><img class="js-image" src="${url}" alt="${alt}"></li>`;
-}
+const createIgm = images.map((item)  =>  {
+  return `<li><img src="${item.url}" alt="${item.alt}" class="gallery_item"></li>`;
+})
 
-const imgElements = images.map(createIgm).join("");
+imgEl.insertAdjacentHTML("afterend", createIgm.join(""));
 
-galleryEL.insertAdjacentHTML("afterend", createIgm);
-
+console.log(imgEl)
+console.log(createIgm)
