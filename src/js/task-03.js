@@ -25,3 +25,14 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const imgEl = document.querySelector(".gallery")
+
+const createIgm = ({ url, alt } = {}) =>  {
+  return `<li class="js-item"><img class="js-image" src="${url}" alt="${alt}"></li>`;
+}
+
+const imgElements = images.map(createIgm).join("");
+
+galleryEL.insertAdjacentHTML("afterend", createIgm);
+
