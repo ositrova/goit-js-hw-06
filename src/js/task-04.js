@@ -18,9 +18,12 @@ btnCounter.counterDecrement.addEventListener("click", decrementClick);
 console.log(btnCounter)
  
 function incrementClick(){
-    counterValueEl += 1
+    counterValue += 1
+    btnCounter.counterValueEl.textContent = counterValue;
 }
 
 function decrementClick(){
-    counterValueEl -= 1
+    counterValue -= 1
+    btnCounter.counterValueEl.textContent = counterValue;
 }
+
