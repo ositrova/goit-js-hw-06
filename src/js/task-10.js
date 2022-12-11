@@ -20,3 +20,26 @@
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
+
+
+
+const boxesRef = document.querySelector('#boxes');
+console.log(boxesRef);
+
+const inputRef = document.querySelector('input');
+console.log(inputRef);
+
+const buttonRef = document.querySelectorAll('button');
+console.log(buttonRef);
+
+
+
+
+
+
+
+
+
+
+
+
