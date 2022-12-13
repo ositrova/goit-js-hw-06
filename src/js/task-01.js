@@ -25,10 +25,17 @@ const list = document.querySelector('#categories');
 const totalCategory = document.querySelectorAll(".item");
 console.log(`Number of categories: `, totalCategory.length);
 
-for (const category of totalCategory) {
-    const itemTitle = category.firstElementChild.textContent;
-    console.log(`Category:`, itemTitle);
-    const itemEl = category.querySelectorAll("li").length ;
-    console.log(`Elements: `, itemEl);
-}
+// for (const category of totalCategory) {
+//     const itemTitle = category.firstElementChild.textContent;
+//     console.log(`Category:`, itemTitle);
+//     const itemEl = category.querySelectorAll("li").length ;
+//     console.log(`Elements: `, itemEl);
+// }
 
+
+
+// Метод перебирання forEach
+totalCategory.forEach(element => {
+    console.log(`Category:`, element.firstElementChild.textContent);
+    console.log(`Elements: `, element.querySelectorAll("li").length);
+  });
