@@ -32,7 +32,8 @@ if (email.value === "" || password.value === "") {
     user.email = email.value,
     user.password = password.value
 
-    console.log(user)
+    console.log(user);
+    
     elem.currentTarget.reset();
     
 }
