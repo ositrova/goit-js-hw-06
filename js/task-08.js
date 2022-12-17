@@ -11,6 +11,8 @@
 // властивості. Для доступу до елементів форми використовуй властивість elements.
 // Виведи об'єкт із введеними даними в консоль і очисти значення полів форми методом 
 // reset.
+
+
 const btnEl = document.querySelector(".login-form");
 btnEl.addEventListener('submit', submitEl);
 
@@ -31,4 +33,7 @@ if (email.value === "" || password.value === "") {
     user.password = password.value
 
     console.log(user)
+    elem.currentTarget.reset();
+    
 }
+
